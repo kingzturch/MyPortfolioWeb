@@ -69,6 +69,21 @@
   .portfolio-img-4:hover .portfolio-description {
     opacity: 1;
   }
+  .contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+.contact-link:hover .phone-icon, 
+.contact-link:hover .inner-text {
+    animation: ring 0.5s infinite;
+}
+@keyframes ring {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
 	</style>
 <body class="home-4">
 	<div id="preloader"></div>
@@ -102,7 +117,7 @@
 
 						</li>
 						<li>
-							<a href="#">Contact Me</a>
+							<a href="#1">Contact Me</a>
 							
 						</li>
 					</ul>
@@ -115,7 +130,7 @@
 					<a href="#"> <i class="fab fa-facebook"></i></a>
 					<a href="#"> <i class="fab fa-youtube"></i></a>
 				</div>
-				<div class="bi-header-cta-btn-grp d-flex align-items-center">
+				<!-- <div class="bi-header-cta-btn-grp d-flex align-items-center">
 					<div class="cart-btn position-relative header-cart-btn">
 						<button><i class="fab fa-opencart"></i></button>
 						<span>2</span>
@@ -123,7 +138,7 @@
 					<div class="offcanves-btn navSidebar-button">
 						<button><i class="fal fa-bars"></i></button>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="mobile_menu position-relative">
@@ -139,31 +154,31 @@
 					<div class="m-brand-logo">
 						<a href="%21.html#"><img src="assets/img/logo/logo2.png" alt=""></a>
 					</div>
-					<div class="mobile-search-bar position-relative">
+					<!-- <div class="mobile-search-bar position-relative">
 						<form action="#">
 							<input type="text" name="search" placeholder="Keywords">
 							<button><i class="fal fa-search"></i></button>
 						</form>
-					</div>
+					</div> -->
 					<nav class="mobile-main-navigation  clearfix ul-li">
 						<ul id="m-main-nav" class="nav navbar-nav clearfix">
-							<li class="dropdown hap-megamenu">
-								<a href="%21.html#">Demos</a>
-				
-							</li>
 							<li class="dropdown">
-								<a href="%21.html#">Home</a>
+								<a href="#main-nav">Home</a>
 							
 							</li>
 							<li><a href="#bi-about-4">About</a></li>
 							
 
 							<li class="dropdown">
-								<a href="%21.html#">Pages</a>
+								<a href="#bi-service-4">Services</a>
 								
 							</li>
 							<li class="dropdown">
-								<a href="%21.html#">Others</a>
+								<a href="#bi-portfolio-4">Projek</a>
+								
+							</li>
+							<li class="dropdown">
+								<a href="#1">Contact Me</a>
 								
 							</li>
 						</ul>
@@ -212,35 +227,9 @@
 							<div class="sidebar-logo">
 								<a href="#"><img src="assets/img/logo/logo2.png" alt=""></a>
 							</div>
-							<div class="sidebar-menu ul-li-block">
-								<ul>
-									<li><a href="#bi-about-4"><i class="fal fa-home"></i> About Us </a></li>
-									<li><a href="service.html"><i class="fal fa-cogs"></i> Service </a></li>
-									<li><a href="testimonila.html"><i class="fal fa-comments-alt"></i> Testimonial </a>
-									</li>
-									<li><a href="team.html"><i class="fal fa-users"></i> Our Team </a></li>
-									<li><a href="portfolio.html"><i class="fal fa-briefcase"></i> Portfolio </a></li>
-									<li><a href="blog.html"><i class="fal fa-blog"></i> Blog </a></li>
-									<li><a href="contact.html"><i class="fal fa-envelope"></i> Contact </a></li>
-								</ul>
-							</div>
-							<div class="sidebar-more-menu text-uppercase d-flex ul-li">
-								<span>More:</span>
-								<ul>
-									<li><a href="#">My Account </a></li>
-									<li><a href="#">Job Apply </a></li>
-									<li><a href="#">Privacy Policy </a></li>
-								</ul>
-							</div>
-							<div class="sidebar-social ul-li-block">
-								<span>Social:</span>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-									<li><a href="#"><i class="fab fa-dribbble"></i> Dribble</a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-								</ul>
-							</div>
+							
+							
+						
 							<div class="sidebar-copyright text-center">
 								© Copyright 2025. All Rights Reserved by Aslicecode.
 							</div>
@@ -434,19 +423,19 @@
 								<div class="bi-about-btn-cta d-flex align-items-center wow fadeInUp"
 									data-wow-delay="400ms" data-wow-duration="1000ms">
 									<div class="bi-btn-4 text-uppercase">
-										<a href="aboutme/aboutme.html">Learn More <span
+										<a href="CV/CV-Indo.pdf" download>Learn More <span
 												class="d-flex justify-content-center align-items-center"><img
 													src="assets/img/icon/arrow.svg" alt=""></span></a>
 									</div>
-									<div class="bi-about-cta-4 d-flex align-items-center">
-										<div class="inner-icon d-flex justify-content-center align-items-center">
+									<a href="tel:+6281336102174" class="bi-about-cta-4 d-flex align-items-center contact-link">
+										<div class="inner-icon d-flex justify-content-center align-items-center phone-icon">
 											<i class="fas fa-phone"></i>
 										</div>
 										<div class="inner-text headline">
 											<span>Contact Me</span>
-											<h4 >+62 813 3610 2174</h4>
+											<h4>+62 813 3610 2174</h4>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 							
@@ -488,7 +477,7 @@
 					<h2 class="tx-split-text split-in-right">Bringing Ideas to Life with Code & Design</h2>
 				</div>
 				<div class="bi-btn-4 text-uppercase wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1000ms">
-					<a href="portfolio.html">More Info <span class="d-flex justify-content-center align-items-center">
+					<a href="#">More Info <span class="d-flex justify-content-center align-items-center">
 				    <img src="assets/img/icon/arrow.svg" alt=""></span></a>
 				</div>
 			</div>
@@ -647,12 +636,12 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">Personality Web - Markas Surabaya</a></h3>
+									<h3><a href="#">Personality Web - Markas Surabaya</a></h3>
 									<div class="portfolio-category">
-										<a href="portfolio.html">Figma</a>
-										<a href="portfolio.html">Web</a>
-										<a href="portfolio.html">Github</a>
-										<a href="portfolio.html">Laporan</a>
+										<a href="#">Figma</a>
+										<a href="#">Web</a>
+										<a href="#">Github</a>
+										<a href="#">Laporan</a>
 									</div>
 								</div>
 							</div>
@@ -665,10 +654,10 @@
 								</div>
 							</div>
 							<div class="portfolio-text headline">
-								<h3><a href="portfolio-single.html">Portfolio Designer - My Porto Web</a></h3>
+								<h3><a href="#">Portfolio Designer - My Porto Web</a></h3>
 								<div class="portfolio-category">
-								<a href="portfolio.html">Web</a>
-								<a href="portfolio.html">Github</a>
+								<a href="#">Web</a>
+								<a href="#">Github</a>
 								</div>
 							</div>
 						</div>
@@ -683,10 +672,10 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">Final Projek Data WareHouse & OLAP</a></h3>
+									<h3><a href="#">Final Projek Data WareHouse & OLAP</a></h3>
 									<div class="portfolio-category">
-										<a href="portfolio.html">Github</a>
-										<a href="portfolio.html">Laporan</a>
+										<a href="#">Github</a>
+										<a href="#">Laporan</a>
 									</div>
 								</div>
 							</div>
@@ -700,10 +689,10 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">SIPKA ( Sistem Pemantauan Kualitas Air)</a></h3>
+									<h3><a href="#">SIPKA ( Sistem Pemantauan Kualitas Air)</a></h3>
 									<div class="portfolio-category">
-										<a href="portfolio.html">Github</a>
-										<a href="portfolio.html">Laporan</a>
+										<a href="#">Github</a>
+										<a href="#">Laporan</a>
 									</div>
 								</div>
 							</div>
@@ -721,11 +710,11 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">WebINDEV (Increase Development )</a></h3>
+									<h3><a href="#">WebINDEV (Increase Development )</a></h3>
 									<div class="portfolio-category">
-										<a href="portfolio.html">Figma</a>
+										<a href="#">Figma</a>
 										
-										<a href="portfolio.html">Github</a>
+										<a href="#">Github</a>
 										
 									</div>
 								</div>
@@ -738,11 +727,11 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">Gudang Film (React Movie Browser)</a></h3>
+									<h3><a href="#">Gudang Film (React Movie Browser)</a></h3>
 									<div class="portfolio-category">
 										
-										<a href="portfolio.html">Github</a>
-										<a href="portfolio.html">Laporan</a>
+										<a href="#">Github</a>
+										<a href="#">Laporan</a>
 									</div>
 								</div>
 							</div>
@@ -755,11 +744,11 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">Cucu Canteen (Canteen Web Platform)</a></h3>
+									<h3><a href="#">Cucu Canteen (Canteen Web Platform)</a></h3>
 									<div class="portfolio-category">
 										
-										<a href="portfolio.html">Web</a>
-										<a href="portfolio.html">Github</a>
+										<a href="#">Web</a>
+										<a href="#">Github</a>
 										
 									</div>
 								</div>
@@ -773,9 +762,9 @@
 									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="print.min.html">My Visual Inspiration on Pinterest</a></h3>
+									<h3><a href="#">My Visual Inspiration on Pinterest</a></h3>
 									<div class="portfolio-category">
-										<a href="portfolio.html">Koleksi Gambar</a>
+										<a href="#">Koleksi Gambar</a>
 										
 									</div>
 								</div>
@@ -784,7 +773,7 @@
 					</div>
 				</div>
 				<div class="bi-btn-4 text-center text-uppercase">
-					<a href="portfolio.html">view More <span
+					<a href="#">view More <span
 							class="d-flex justify-content-center align-items-center"><img
 								src="assets/img/icon/arrow.svg" alt=""></span></a>
 				</div>
@@ -1552,97 +1541,34 @@
 				</div>
 			</div>
 		</div>
-		<div class="bi-footer-widget-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="bi-footer-widget headline pera-content ul-li-block">
-							<div class="about-widget">
-								<h3>Working Together
-									Ideas come to life</h3>
-								<p>
-									No matter how big your company is, as you expand and reach new highs you’ll want an
-									agency to have your back. One with a process
-								</p>
+			<div class="bi-footer-widget-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="bi-footer-widget headline pera-content ul-li-block">
+								<div class="about-widget">
+									<h3>Let's Connect and Build Together</h3>
+									<p>
+										As an Information Systems student, I am passionate about web development, UI/UX design, and data analysis. Let's collaborate and create something impactful.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-2">
-						<div class="bi-footer-widget headline pera-content ul-li-block">
-							<div class="menu-widget">
-								<h3 class="widget-title">UI Design</h3>
+						<div class="col-lg-6">
+							<div class="bi-footer-widget headline pera-content ul-li-block">
+								<h3 id="1">Contact Information</h3>
 								<ul>
-									<li><a href="#">Estimation</a></li>
-									<li><a href="#">Research</a></li>
-									<li><a href="#">Storyboard</a></li>
-									<li><a href="#">User Flow</a></li>
-									<li><a href="#">Information </a></li>
-									<li><a href="#">Storyboard (IA)</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="bi-footer-widget headline pera-content ul-li-block">
-							<div class="menu-widget">
-								<h3 class="widget-title">Development</h3>
-								<ul>
-									<li><a href="#">Front End (HTML, CSS, React)</a></li>
-									<li><a href="#">Backend (Node.js, MongoDB)</a></li>
-									<li><a href="#">iOS (Swift)</a></li>
-									<li><a href="#">Android (Kotlin, Flutter)</a></li>
-									<li><a href="#">Post Delivery Support</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2">
-						<div class="bi-footer-widget headline pera-content ul-li-block">
-							<div class="menu-widget">
-								<h3 class="widget-title">UI Design</h3>
-								<ul>
-									<li><a href="#">Define Idea</a></li>
-									<li><a href="#">Target Audience</a></li>
-									<li><a href="#">Idea Validation</a></li>
-									<li><a href="#">Customer Value </a></li>
-									<li><a href="#">Build MVP Version</a></li>
-									<li><a href="#">Competitor Reserach</a></li>
+									<li>Email: <a href="mailto:alfathur.rabbani554@gmail.com">alfathur.rabbani554@gmail.com</a></li>
+									<li>Phone: <a href="tel:+6281336102174">+62 813 3610 2174</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="bi-footer-social">
-			<div class="container">
-				<div class="bi-footer-social-content ul-li">
-					<ul>
-						<li><a href="#"><i class="fal fa-basketball-ball"></i> Dribbble </a></li>
-						<li><a href="#"><i class="fab fa-behance-square"></i> Behance </a></li>
-						<li><a href="#"><i class="fab fa-linkedin-in"></i> Linked In </a></li>
-						<li><a href="#"><i class="fab fa-facebook-f"></i> Facebook </a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i> Instagram </a></li>
-						<li><a href="#"><i class="fab fa-youtube"></i> Youtube </a></li>
-					</ul>
-				</div>
+			<div class="bi-footer-copyright text-center">
+				© 2025 Alfathur Rabbani | Information Systems Student
 			</div>
-		</div>
-		<div class="bi-footer-logo-area">
-			<div class="container">
-				<div class="bi-footer-logo">
-					<div class="brand-logo text-center">
-						<a href="#"><img src="assets/img/logo/logo2.png" alt=""></a>
-					</div>
-					<div class="logo-mail text-center headline">
-						<h3><a href="#">email@webs.com</a></h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bi-footer-copyright text-center">
-			Copyright 2023 @webagency
-		</div>
 	</footer>
 	<!-- End of Footer  section
 	============================================= -->
