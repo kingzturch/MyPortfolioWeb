@@ -31,7 +31,45 @@
 			});
 		});
 	});
+
 	</script>
+
+	<style>
+	.portfolio-img-4 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .portfolio-img-4 img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .portfolio-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .portfolio-img-4:hover img {
+    opacity: 0.3;
+  }
+
+  .portfolio-img-4:hover .portfolio-description {
+    opacity: 1;
+  }
+	</style>
 <body class="home-4">
 	<div id="preloader"></div>
 	<div class="up">
@@ -600,10 +638,13 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="bi-portfolio-item-wrapper">
-							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="100ms"
-								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
+							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"data-wow-duration="1000ms" data-tilt data-tilt-max="2">
 								<div class="portfolio-img-4">
 									<img src="assets/img/project/pro1.png" alt="">
+									<div class="portfolio-description">
+										<p>Membuat Personality WEB untuk mengetahui posisi user yang cocok
+											pada Startup</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
 									<h3><a href="portfolio-single.html">Personality Web - Markas Surabaya</a></h3>
@@ -615,23 +656,31 @@
 									</div>
 								</div>
 							</div>
-							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"
-								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
-								<div class="portfolio-img-4">
-									<img src="assets/img/project/pro2.png" alt="">
-								</div>
-								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">Portfolio Designer - My Porto Web</a></h3>
-									<div class="portfolio-category">
-										<a href="portfolio.html">Web</a>
-										<a href="portfolio.html">Github</a>
-									</div>
+
+						<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"data-wow-duration="1000ms" data-tilt data-tilt-max="2">
+							<div class="portfolio-img-4">
+								<img src="assets/img/project/pro2.png" alt="">
+								<div class="portfolio-description">
+								<p>Website portfolio yang menampilkan desain kreatif dan pengalaman pengguna yang interaktif.</p>
 								</div>
 							</div>
-							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="300ms"
-								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
-								<div class="portfolio-img-4">
+							<div class="portfolio-text headline">
+								<h3><a href="portfolio-single.html">Portfolio Designer - My Porto Web</a></h3>
+								<div class="portfolio-category">
+								<a href="portfolio.html">Web</a>
+								<a href="portfolio.html">Github</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"data-wow-duration="1000ms" data-tilt data-tilt-max="2">
+								 <div class="portfolio-img-4">
 									<img src="assets/img/project/pro3.png" alt="">
+									<div class="portfolio-description">
+										<p>Dalam proyek ini, database Adventure Works 2019 digunakan sebagai
+											sumber data utama untuk membangun data warehouse yang bertujuan menganalisis penjualan,
+											kinerja karyawan, dan wilayah penjualan.</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
 									<h3><a href="portfolio-single.html">Final Projek Data WareHouse & OLAP</a></h3>
@@ -641,10 +690,14 @@
 									</div>
 								</div>
 							</div>
-							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="400ms"
-								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
+							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"data-wow-duration="1000ms" data-tilt data-tilt-max="2">
 								<div class="portfolio-img-4">
 									<img src="assets/img/project/pro4.png" alt="">
+									<div class="portfolio-description">
+										<p>SiPKA (Pemantauan Kualitas Air) adalah proses pengumpulan dan
+											analisis data tentang kualitas air di berbagai sumber air. Tujuannya adalah untuk memastikan
+											bahwa air tersebut memenuhi standar kualitas yang telah ditetapkan.</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
 									<h3><a href="portfolio-single.html">SIPKA ( Sistem Pemantauan Kualitas Air)</a></h3>
@@ -658,13 +711,17 @@
 					</div>
 					<div class="col-lg-6">
 						<div class="bi-portfolio-item-wrapper-2">
-							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="150ms"
-								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
+							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"data-wow-duration="1000ms" data-tilt data-tilt-max="2">
 								<div class="portfolio-img-4">
 									<img src="assets/img/project/pro5.png" alt="">
+									<div class="portfolio-description">
+										<p>Desain dan isi dari website ini berfokus pada profesionalitas,
+											kemudahan navigasi, serta memberikan kepercayaan kepada pengguna bahwa INDEV adalah mitra
+											teknologi yang tepat untuk kebutuhan mereka.</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
-									<h3><a href="portfolio-single.html">Web INDEV (Increase Development )</a></h3>
+									<h3><a href="portfolio-single.html">WebINDEV (Increase Development )</a></h3>
 									<div class="portfolio-category">
 										<a href="portfolio.html">Figma</a>
 										
@@ -673,10 +730,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="250ms"
-								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
+							<div class="bi-portfolio-item-4 wow fadeInUp" data-wow-delay="200ms"data-wow-duration="1000ms" data-tilt data-tilt-max="2">
 								<div class="portfolio-img-4">
 									<img src="assets/img/project/pro6.png" alt="">
+									<div class="portfolio-description">
+										<p>Movie Project adalah aplikasi berbasis web yang menampilkan daftar film populer. Project ini menggunakan TMDb API sebagai sumber data untuk mengambil informasi yang relevan.</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
 									<h3><a href="portfolio-single.html">Gudang Film (React Movie Browser)</a></h3>
@@ -691,6 +750,9 @@
 								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
 								<div class="portfolio-img-4">
 									<img src="assets/img/project/pro7.png" alt="">
+									<div class="portfolio-description">
+										<p>Cucu Canteen adalah platform digital untuk melihat menu dan layanan dengan mudah. Cucu Canteen memungkinkan pelanggan untuk mengetahui lokasi, serta mendapatkan update promo terbaru.</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
 									<h3><a href="portfolio-single.html">Cucu Canteen (Canteen Web Platform)</a></h3>
@@ -706,6 +768,9 @@
 								data-wow-duration="1000ms" data-tilt data-tilt-max="2">
 								<div class="portfolio-img-4">
 									<img src="assets/img/project/pro8.png" alt="">
+									<div class="portfolio-description">
+										<p>Berisi koleksi gambar-gambar inspirasional yang saya buat dan simpan di Pinterest. Koleksi ini mencerminkan minat saya pada seni visual, desain kreatif, dan elemen estetika yang mendukung ide-ide proyek masa depan.</p>
+									</div>
 								</div>
 								<div class="portfolio-text headline">
 									<h3><a href="print.min.html">My Visual Inspiration on Pinterest</a></h3>
