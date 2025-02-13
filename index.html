@@ -35,11 +35,14 @@
 	</script>
 
 	<style>
-	.portfolio-img-4 {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
+.bi-main-slider-arrow-4 i:hover {
+    animation: shake 0.5s infinite alternate;
+}
+/* Animasi goyang untuk ikon panah */
+@keyframes shake {
+    0% { transform: translateX(-2px); }
+    100% { transform: translateX(2px); }
+}
 
   .portfolio-img-4 img {
     width: 100%;
@@ -291,7 +294,7 @@
 						<div class="bi-main-slider-text position-relative headline pera-content">
 							<h1>
 								I am
-								<span>Innovative</span>
+								<span style="font-size: 10vw;">Innovative</span>
 								<strong>Web <b>Dev</b></strong>
 							</h1>
 							<div class="bi-slider-text">
@@ -362,7 +365,7 @@
 						<div class="bi-main-slider-text position-relative headline pera-content">
 							<h1>
 								I am
-								<span>Analytical</span>
+								<span style="font-size: 10vw;">Analytical</span>
 								<strong>Data <b>Sc</b></strong>
 							</h1>
 							<div class="bi-slider-text">
@@ -394,9 +397,13 @@
 			</div>
 			<div class="bi-main-slider-next-prev">
 				<div class="bi-main-slider-arrow-4 d-flex justify-content-end align-items-center bi-main-button-prev-4"
-					data-background="assets/img/slider/arrow-bg1.png"><i class="far fa-long-arrow-left"></i></div>
-				<div class="bi-main-slider-arrow-4 bi-main-button-next-4  d-flex justify-content-start align-items-center"
-					data-background="assets/img/slider/arrow-bg2.png"><i class="far fa-long-arrow-right"></i></div>
+					data-background="assets/img/slider/arrow-bg1.png">
+					<i class="far fa-long-arrow-left"></i>
+				</div>
+				<div class="bi-main-slider-arrow-4 bi-main-button-next-4 d-flex justify-content-start align-items-center"
+					data-background="assets/img/slider/arrow-bg2.png">
+					<i class="far fa-long-arrow-right"></i>
+				</div>
 			</div>
 		</div>
 	</section>
